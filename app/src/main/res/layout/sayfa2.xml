@@ -8,11 +8,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/merhaba"
         android:layout_gravity="start"
         android:layout_margin="16dp"
+        android:text="@string/merhaba"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
@@ -20,6 +20,7 @@
         android:layout_marginHorizontal="16dp"
         android:background="#8B359A"
         android:hint="@string/mail"
+        android:inputType="textEmailAddress"
         android:padding="8dp"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -33,6 +34,7 @@
         android:background="#8B359A"
         android:gravity="center|start"
         android:hint="@string/phone"
+        android:inputType="phone"
         android:padding="8dp"
         android:textColor="@color/white"
         android:textSize="24sp"
