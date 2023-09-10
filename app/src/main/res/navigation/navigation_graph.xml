@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_giris">
         <action
             android:id="@+id/action_girisFragment_to_kisiselBilgilerFragment"
-            app:destination="@id/kisiselBilgilerFragment" />
+            app:destination="@id/kisiselBilgilerFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/kisiselBilgilerFragment"
@@ -21,7 +25,11 @@
         tools:layout="@layout/fragment_kisisel_bilgiler">
         <action
             android:id="@+id/action_kisiselBilgilerFragment_to_customFragment"
-            app:destination="@id/customFragment" />
+            app:destination="@id/customFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/customFragment"
@@ -30,7 +38,11 @@
         tools:layout="@layout/fragment_custom">
         <action
             android:id="@+id/action_customFragment_to_sonuclarFragment"
-            app:destination="@id/sonuclarFragment" />
+            app:destination="@id/sonuclarFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/sonuclarFragment"
@@ -39,6 +51,10 @@
         tools:layout="@layout/fragment_sonuclar">
         <action
             android:id="@+id/action_sonuclarFragment_to_girisFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
             app:popUpTo="@id/girisFragment"
             app:popUpToInclusive="true" />
     </fragment>
