@@ -30,6 +30,12 @@
             app:exitAnim="@android:anim/fade_out"
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/customFragment"

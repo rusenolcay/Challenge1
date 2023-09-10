@@ -7,25 +7,27 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:background="#8B359A"
         android:hint="@string/name"
-        android:inputType="textPersonName"
+        android:inputType="textCapSentences"
         android:padding="8dp"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/et_surname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:background="#8B359A"
         android:hint="@string/surname"
-        android:inputType="textPersonName"
+        android:inputType="textCapSentences"
         android:padding="8dp"
         android:textColor="@color/white"
         android:textSize="24sp"

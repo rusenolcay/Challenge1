@@ -10,14 +10,25 @@ import com.info.odevdeneme1.databinding.FragmentGirisBinding
 
 class GirisFragment : Fragment() {
 
+    private lateinit var binding: FragmentGirisBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val binding = FragmentGirisBinding.inflate(inflater, container, false)
+    ): View {
+        binding = FragmentGirisBinding.inflate(inflater, container, false)
         binding.btnGiris.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_girisFragment_to_kisiselBilgilerFragment)
+            navigateKisiselBilgiler(it)
         }
         return binding.root
+    }
+
+    private fun navigateKisiselBilgiler(view: View) {
+        val name = binding.etName.text.toString()
+        val surname = binding.etSurname.text.toString()
+
+        val navDirections =
+            GirisFragmentDirections.actionGirisFragmentToKisiselBilgilerFragment(name, surname)
+        Navigation.findNavController(view).navigate(navDirections)
     }
 }
