@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.info.odevdeneme1.GirisFragment"
+        android:label="GirisFragment"
+        tools:layout="@layout/fragment_giris"/>
+    <fragment
+        android:id="@+id/kisiselBilgilerFragment"
+        android:name="com.info.odevdeneme1.KisiselBilgilerFragment"
+        android:label="KisiselBilgilerFragment"
+        tools:layout="@layout/fragment_kisisel_bilgiler"/>
+    <fragment
+        android:id="@+id/customFragment"
+        android:name="com.info.odevdeneme1.CustomFragment"
+        android:label="CustomFragment"
+        tools:layout="@layout/fragment_custom"/>
+    <fragment
+        android:id="@+id/sonuclarFragment"
+        android:name="com.info.odevdeneme1.SonuclarFragment"
+        android:label="SonuclarFragment"
+        tools:layout="@layout/fragment_sonuclar"/>
+
+</navigation>
