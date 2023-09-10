@@ -16,7 +16,7 @@ class KisiselBilgilerFragment : Fragment() {
     ): View? {
         val binding = FragmentKisiselBilgilerBinding.inflate(inflater, container, false)
         binding.btnKisiselBilgi.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_customFragment_to_sonuclarFragment)
+            Navigation.findNavController(it).navigate(R.id.action_kisiselBilgilerFragment_to_customFragment)
         }
         return binding.root
     }

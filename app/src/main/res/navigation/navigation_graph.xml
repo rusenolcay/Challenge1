@@ -36,6 +36,11 @@
         android:id="@+id/sonuclarFragment"
         android:name="com.info.odevdeneme1.SonuclarFragment"
         android:label="SonuclarFragment"
-        tools:layout="@layout/fragment_sonuclar"/>
+        tools:layout="@layout/fragment_sonuclar">
+        <action
+            android:id="@+id/action_sonuclarFragment_to_girisFragment"
+            app:popUpTo="@id/girisFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 </navigation>

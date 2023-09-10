@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.info.odevdeneme1.databinding.FragmentSonuclarBinding
 
 class SonuclarFragment : Fragment() {
@@ -14,6 +15,9 @@ class SonuclarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentSonuclarBinding.inflate(inflater, container, false)
+        binding.button.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_sonuclarFragment_to_girisFragment)
+        }
         return binding.root
     }
 }
