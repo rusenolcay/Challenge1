@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.info.odevdeneme1.databinding.FragmentGirisBinding
 
 class GirisFragment : Fragment() {
@@ -14,6 +15,9 @@ class GirisFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentGirisBinding.inflate(inflater, container, false)
+        binding.btnGiris.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_girisFragment_to_kisiselBilgilerFragment)
+        }
         return binding.root
     }
 }

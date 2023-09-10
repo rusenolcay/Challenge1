@@ -9,17 +9,29 @@
         android:id="@+id/girisFragment"
         android:name="com.info.odevdeneme1.GirisFragment"
         android:label="GirisFragment"
-        tools:layout="@layout/fragment_giris"/>
+        tools:layout="@layout/fragment_giris">
+        <action
+            android:id="@+id/action_girisFragment_to_kisiselBilgilerFragment"
+            app:destination="@id/kisiselBilgilerFragment" />
+    </fragment>
     <fragment
         android:id="@+id/kisiselBilgilerFragment"
         android:name="com.info.odevdeneme1.KisiselBilgilerFragment"
         android:label="KisiselBilgilerFragment"
-        tools:layout="@layout/fragment_kisisel_bilgiler"/>
+        tools:layout="@layout/fragment_kisisel_bilgiler">
+        <action
+            android:id="@+id/action_kisiselBilgilerFragment_to_customFragment"
+            app:destination="@id/customFragment" />
+    </fragment>
     <fragment
         android:id="@+id/customFragment"
         android:name="com.info.odevdeneme1.CustomFragment"
         android:label="CustomFragment"
-        tools:layout="@layout/fragment_custom"/>
+        tools:layout="@layout/fragment_custom">
+        <action
+            android:id="@+id/action_customFragment_to_sonuclarFragment"
+            app:destination="@id/sonuclarFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sonuclarFragment"
         android:name="com.info.odevdeneme1.SonuclarFragment"
