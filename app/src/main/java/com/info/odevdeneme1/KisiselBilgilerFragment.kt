@@ -12,6 +12,7 @@ import com.info.odevdeneme1.databinding.FragmentKisiselBilgilerBinding
 class KisiselBilgilerFragment : Fragment() {
 
     private lateinit var binding: FragmentKisiselBilgilerBinding
+    val bundle: KisiselBilgilerFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,12 +29,19 @@ class KisiselBilgilerFragment : Fragment() {
     }
 
     private fun navigateCustomFragment(view: View) {
-        Navigation.findNavController(view)
-            .navigate(R.id.action_kisiselBilgilerFragment_to_customFragment)
+        val person = Person(
+            name = bundle.name,
+            surname = bundle.surname,
+            phone = binding.etPhone.text.toString(),
+            mail = binding.etMail.text.toString()
+        )
+        val navDirections =
+            KisiselBilgilerFragmentDirections.actionKisiselBilgilerFragmentToCustomFragment(person)
+        Navigation.findNavController(view).navigate(navDirections)
+
     }
 
     private fun showGreetingMessage() {
-        val bundle: KisiselBilgilerFragmentArgs by navArgs()
         val name = bundle.name
         val surname = bundle.surname
         binding.tvKarsilamaMesaji.text = "Merhaba, $name $surname;"

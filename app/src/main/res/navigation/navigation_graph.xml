@@ -49,6 +49,9 @@
             app:exitAnim="@android:anim/fade_out"
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="person"
+            app:argType="com.info.odevdeneme1.Person" />
     </fragment>
     <fragment
         android:id="@+id/sonuclarFragment"
