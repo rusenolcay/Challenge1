@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
 import com.info.odevdeneme1.databinding.FragmentGirisBinding
 
@@ -18,7 +19,11 @@ class GirisFragment : Fragment() {
     ): View {
         binding = FragmentGirisBinding.inflate(inflater, container, false)
         binding.btnGiris.setOnClickListener {
-            navigateKisiselBilgiler(it)
+            if (binding.etName.text.isBlank() || binding.etSurname.text.isBlank()) {
+                Toast.makeText(context, getString(R.string.uyari), Toast.LENGTH_SHORT).show()
+            } else {
+                navigateKisiselBilgiler(it)
+            }
         }
         return binding.root
     }

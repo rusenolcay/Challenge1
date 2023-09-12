@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import com.info.odevdeneme1.databinding.FragmentKisiselBilgilerBinding
@@ -19,9 +20,12 @@ class KisiselBilgilerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentKisiselBilgilerBinding.inflate(inflater, container, false)
-
         binding.btnKisiselBilgi.setOnClickListener {
-            navigateCustomFragment(it)
+            if (binding.etMail.text.isBlank() || binding.etPhone.text.isBlank()) {
+                Toast.makeText(context, getString(R.string.uyari), Toast.LENGTH_SHORT).show()
+            } else {
+                navigateCustomFragment(it)
+            }
         }
 
         showGreetingMessage()

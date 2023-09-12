@@ -10,4 +10,5 @@
     <string name="soru3">Sizce uygulanan bu yöntem güvenli mi?</string>
     <string name="devamet">Devam Et</string>
     <string name="yanıt">Evet veya Hayır</string>
+    <string name="uyari">Lütfen tüm alanları doldurunuz.</string>
 </resources>
