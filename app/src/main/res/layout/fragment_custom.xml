@@ -1,88 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_margin="16dp"
-        android:text="@string/merhaba"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:drawablePadding="8dp"
-        android:text="@string/soru1"
-        android:textSize="16sp"
-        app:drawableStartCompat="@drawable/ic_circle"
-        app:drawableTint="?colorPrimary" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="@string/yanıt"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_karsilama_mesaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Merhaba, Ruşen Narinç" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:drawablePadding="8dp"
-        android:text="@string/soru2"
-        android:textSize="16sp"
-        app:drawableStartCompat="@drawable/ic_circle"
-        app:drawableTint="?colorPrimary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="8dp"
+            android:text="@string/soru1"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_circle"
+            app:drawableTint="?colorPrimary" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="@string/yanıt"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textSize="16sp" />
+        <EditText
+            android:id="@+id/et_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/yanıt"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:drawablePadding="8dp"
-        android:text="@string/soru3"
-        android:textSize="16sp"
-        app:drawableStartCompat="@drawable/ic_circle"
-        app:drawableTint="?colorPrimary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawablePadding="8dp"
+            android:text="@string/soru2"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_circle"
+            app:drawableTint="?colorPrimary" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="@string/yanıt"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textSize="16sp" />
+        <EditText
+            android:id="@+id/et_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/yanıt"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/btn_custom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/devamet"
-        android:textSize="16sp" />
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawablePadding="8dp"
+            android:text="@string/soru3"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_circle"
+            app:drawableTint="?colorPrimary" />
+
+        <EditText
+            android:id="@+id/et_answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/yanıt"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/devamet"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
