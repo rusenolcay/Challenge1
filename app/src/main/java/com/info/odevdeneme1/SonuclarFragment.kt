@@ -36,13 +36,16 @@ class SonuclarFragment : Fragment() {
     }
 
     private fun showCustomPerson() {
-        val name = bundle.customPerson.person.name
-        val surname = bundle.customPerson.person.surname
-        binding.tvNameSurname.text = "$name $surname"
-        binding.tvMail.text = bundle.customPerson.person.mail
-        binding.tvPhone.text = bundle.customPerson.person.phone
-        binding.tvAnswer1.text = bundle.customPerson.answer1
-        binding.tvAnswer2.text = bundle.customPerson.answer2
-        binding.tvAnswer3.text = bundle.customPerson.answer3
+        val customPerson = bundle.customPerson
+        val name = customPerson.person.name
+        val surname = customPerson.person.surname
+        with(binding) {
+            tvNameSurname.text = "$name $surname"
+            tvMail.text = customPerson.person.mail
+            tvPhone.text = customPerson.person.phone
+            tvAnswer1.text = customPerson.answer1
+            tvAnswer2.text = customPerson.answer2
+            tvAnswer3.text = customPerson.answer3
+        }
     }
 }

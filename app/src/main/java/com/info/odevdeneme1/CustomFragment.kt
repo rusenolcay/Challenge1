@@ -1,11 +1,11 @@
 package com.info.odevdeneme1
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import com.info.odevdeneme1.databinding.FragmentCustomBinding
@@ -19,21 +19,33 @@ class CustomFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentCustomBinding.inflate(inflater, container, false)
-        binding.btnCustom.setOnClickListener {
-            if (isValid()) {
-                navigateSonuclarFragment(it)
-            } else {
-                Toast.makeText(context, getString(R.string.uyari), Toast.LENGTH_SHORT).show()
-            }
-        }
+        init()
         showGreetingMessage()
         return binding.root
     }
 
+    private fun init() {
+        binding.btnCustom.setOnClickListener {
+            attemptValidation(it)
+        }
+        binding.linearlayout.setOnClickListener {
+            hideKeyboard()
+        }
+    }
+
+    private fun attemptValidation(view: View) {
+        if (isValid()) {
+            navigateSonuclarFragment(view)
+        } else {
+            context?.showToast()
+            Toast.makeText(context, getString(R.string.uyari), Toast.LENGTH_SHORT).show()
+        }
+    }
+
     // eğer herhangi bir alan boş ise false dönderir, eğer hepsi doluysa true dönderir.
-    private fun isValid() = binding.etAnswer1.text.isNotBlank() &&
-            binding.etAnswer2.text.isNotBlank() &&
-            binding.etAnswer3.text.isNotBlank()
+    private fun isValid() = with(binding) {
+        etAnswer1.text.isNotBlank() && etAnswer2.text.isNotBlank() && etAnswer3.text.isNotBlank()
+    }
 
     private fun navigateSonuclarFragment(view: View) {
         val customPerson = CustomPerson(

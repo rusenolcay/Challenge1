@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/pink">
 
     <TextView
         android:id="@+id/textView4"
@@ -23,10 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Ana Sayfaya Dön"
+        android:text="@string/turn_homepage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_answer3" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_answer3"
+        android:backgroundTint="@color/cyan"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -46,11 +48,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Evet / Hayır"
+        tools:text="Evet / Hayır"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:textColor="@color/cyan"/>
 
     <TextView
         android:id="@+id/tv_phone"
@@ -59,11 +62,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
-        android:text="Telefon Numarası"
+        tools:text="@string/phone"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_mail" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_mail"
+        android:textColor="@color/cyan"/>
 
     <TextView
         android:id="@+id/tv_answer1"
@@ -75,7 +79,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:text="Evet / Hayır" />
+        tools:text="Evet / Hayır"
+        android:textColor="@color/cyan"/>
 
     <TextView
         android:id="@+id/tv_mail"
@@ -87,7 +92,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name_surname"
-        tools:text="E-posta" />
+        tools:text="E-posta"
+        android:textColor="@color/cyan"/>
 
     <TextView
         android:id="@+id/tv_name_surname"
@@ -99,7 +105,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="İsim  Soyisim" />
+        tools:text="İsim  Soyisim"
+        android:textColor="@color/cyan"/>
 
     <TextView
         android:id="@+id/tv_answer3"
@@ -111,7 +118,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        tools:text="Evet/ Hayır" />
+        tools:text="Evet/ Hayır"
+        android:textColor="@color/cyan"/>
 
     <TextView
         android:id="@+id/textView5"

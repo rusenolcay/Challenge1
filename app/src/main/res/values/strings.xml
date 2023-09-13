@@ -4,11 +4,12 @@
     <string name="surname">Surname</string>
     <string name="login">Başla</string>
     <string name="mail">E-posta</string>
-    <string name="phone">Phone</string>
+    <string name="phone">Telefon Numarası</string>
     <string name="soru1">Aylık geliriniz 50.000 TL üzerinde mi?</string>
     <string name="soru2">Oturduğunuz ev size mi ait?</string>
     <string name="soru3">Sizce uygulanan bu yöntem güvenli mi?</string>
     <string name="devamet">Devam Et</string>
     <string name="yanıt">Evet veya Hayır</string>
     <string name="uyari">Lütfen tüm alanları doldurunuz.</string>
+    <string name="turn_homepage">Ana Sayfaya Dön</string>
 </resources>

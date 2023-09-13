@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/pink"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:background="#8B359A"
         android:hint="@string/name"
         android:inputType="textCapSentences"
         android:padding="8dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@color/white"/>
 
     <EditText
         android:id="@+id/et_surname"
@@ -25,13 +25,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:background="#8B359A"
+        android:background="@color/white"
         android:hint="@string/surname"
         android:inputType="textCapSentences"
         android:padding="8dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
 
     <Button
         android:id="@+id/btn_giris"
@@ -41,5 +42,6 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/login"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:backgroundTint="@color/pink_dark"/>
 </LinearLayout>

@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/pink">
 
     <LinearLayout
+        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -19,7 +21,8 @@
             android:layout_margin="16dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="Merhaba, Ruşen Narinç" />
+            tools:text="Merhaba, Ruşen Narinç"
+            android:textColor="@color/cyan"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -40,7 +43,8 @@
             android:hint="@string/yanıt"
             android:inputType="text"
             android:padding="10dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/cyan"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -62,7 +66,8 @@
             android:hint="@string/yanıt"
             android:inputType="text"
             android:padding="10dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/cyan"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -84,7 +89,8 @@
             android:hint="@string/yanıt"
             android:inputType="text"
             android:padding="10dp"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/cyan"/>
 
         <Button
             android:id="@+id/btn_custom"
@@ -94,6 +100,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:text="@string/devamet"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:backgroundTint="@color/pink_dark"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -18,14 +18,20 @@ class GirisFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentGirisBinding.inflate(inflater, container, false)
-        binding.btnGiris.setOnClickListener {
-            if (binding.etName.text.isBlank() || binding.etSurname.text.isBlank()) {
-                Toast.makeText(context, getString(R.string.uyari), Toast.LENGTH_SHORT).show()
-            } else {
-                navigateKisiselBilgiler(it)
+        init()
+        return binding.root
+    }
+
+    private fun init() {
+        with(binding) {
+            btnGiris.setOnClickListener {
+                if (etName.text.isBlank() || etSurname.text.isBlank()) {
+                    context?.showToast()
+                } else {
+                    navigateKisiselBilgiler(it)
+                }
             }
         }
-        return binding.root
     }
 
     private fun navigateKisiselBilgiler(view: View) {

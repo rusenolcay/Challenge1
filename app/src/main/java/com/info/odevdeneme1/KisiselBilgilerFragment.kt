@@ -20,16 +20,21 @@ class KisiselBilgilerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentKisiselBilgilerBinding.inflate(inflater, container, false)
-        binding.btnKisiselBilgi.setOnClickListener {
-            if (binding.etMail.text.isBlank() || binding.etPhone.text.isBlank()) {
-                Toast.makeText(context, getString(R.string.uyari), Toast.LENGTH_SHORT).show()
-            } else {
-                navigateCustomFragment(it)
-            }
-        }
-
+        init()
         showGreetingMessage()
         return binding.root
+    }
+
+    private fun init() {
+        with(binding) {
+            btnKisiselBilgi.setOnClickListener {
+                if (etMail.text.isBlank() || etPhone.text.isBlank()) {
+                    context?.showToast()
+                } else {
+                    navigateCustomFragment(it)
+                }
+            }
+        }
     }
 
     private fun navigateCustomFragment(view: View) {
@@ -42,7 +47,6 @@ class KisiselBilgilerFragment : Fragment() {
         val navDirections =
             KisiselBilgilerFragmentDirections.actionKisiselBilgilerFragmentToCustomFragment(person)
         Navigation.findNavController(view).navigate(navDirections)
-
     }
 
     private fun showGreetingMessage() {
