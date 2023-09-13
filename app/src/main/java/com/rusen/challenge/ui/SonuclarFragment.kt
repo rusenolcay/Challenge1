@@ -1,4 +1,4 @@
-package com.rusen.challenge
+package com.rusen.challenge.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

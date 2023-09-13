@@ -1,4 +1,4 @@
-package com.rusen.challenge
+package com.rusen.challenge.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/girisFragment"
-        android:name="com.rusen.challenge.GirisFragment"
+        android:name="com.rusen.challenge.ui.GirisFragment"
         android:label="GirisFragment"
         tools:layout="@layout/fragment_giris">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/kisiselBilgilerFragment"
-        android:name="com.rusen.challenge.KisiselBilgilerFragment"
+        android:name="com.rusen.challenge.ui.KisiselBilgilerFragment"
         android:label="KisiselBilgilerFragment"
         tools:layout="@layout/fragment_kisisel_bilgiler">
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/customFragment"
-        android:name="com.rusen.challenge.CustomFragment"
+        android:name="com.rusen.challenge.ui.CustomFragment"
         android:label="CustomFragment"
         tools:layout="@layout/fragment_custom">
         <action
@@ -51,16 +51,16 @@
             app:popExitAnim="@android:anim/fade_out" />
         <argument
             android:name="person"
-            app:argType="com.info.odevdeneme1.Person" />
+            app:argType="com.rusen.challenge.data.Person" />
     </fragment>
     <fragment
         android:id="@+id/sonuclarFragment"
-        android:name="com.rusen.challenge.SonuclarFragment"
+        android:name="com.rusen.challenge.ui.SonuclarFragment"
         android:label="SonuclarFragment"
         tools:layout="@layout/fragment_sonuclar">
         <argument
             android:name="customPerson"
-            app:argType="com.info.odevdeneme1.CustomPerson" />
+            app:argType="com.rusen.challenge.data.CustomPerson" />
         <action
             android:id="@+id/action_sonuclarFragment_to_girisFragment"
             app:destination="@id/girisFragment"

@@ -1,4 +1,4 @@
-package com.rusen.challenge
+package com.rusen.challenge.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,11 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
+import com.rusen.challenge.R
+import com.rusen.challenge.data.CustomPerson
 import com.rusen.challenge.databinding.FragmentCustomBinding
+import com.rusen.challenge.hideKeyboard
+import com.rusen.challenge.showToast
 
 class CustomFragment : Fragment() {
     private lateinit var binding: FragmentCustomBinding

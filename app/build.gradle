@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.info.odevdeneme1'
+    namespace 'com.rusen.challenge'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.info.odevdeneme1"
+        applicationId "com.rusen.challenge"
         minSdk 24
         targetSdk 34
         versionCode 1

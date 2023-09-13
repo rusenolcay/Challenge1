@@ -1,4 +1,4 @@
-package com.rusen.challenge
+package com.rusen.challenge.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.rusen.challenge.databinding.FragmentGirisBinding
+import com.rusen.challenge.showToast
 
 class GirisFragment : Fragment() {
 

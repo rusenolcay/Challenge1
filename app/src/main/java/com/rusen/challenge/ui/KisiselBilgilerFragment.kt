@@ -1,4 +1,4 @@
-package com.rusen.challenge
+package com.rusen.challenge.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
+import com.rusen.challenge.data.Person
 import com.rusen.challenge.databinding.FragmentKisiselBilgilerBinding
+import com.rusen.challenge.showToast
 
 class KisiselBilgilerFragment : Fragment() {
 
