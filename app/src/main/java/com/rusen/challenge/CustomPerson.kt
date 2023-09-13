@@ -1,4 +1,4 @@
-package com.info.odevdeneme1
+package com.rusen.challenge
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

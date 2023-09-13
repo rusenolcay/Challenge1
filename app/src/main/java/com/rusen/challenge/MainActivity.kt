@@ -1,4 +1,4 @@
-package com.info.odevdeneme1
+package com.rusen.challenge
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

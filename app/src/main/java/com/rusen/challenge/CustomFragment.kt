@@ -1,4 +1,4 @@
-package com.info.odevdeneme1
+package com.rusen.challenge
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
-import com.info.odevdeneme1.databinding.FragmentCustomBinding
+import com.rusen.challenge.databinding.FragmentCustomBinding
 
 class CustomFragment : Fragment() {
     private lateinit var binding: FragmentCustomBinding

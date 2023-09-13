@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/girisFragment"
-        android:name="com.info.odevdeneme1.GirisFragment"
+        android:name="com.rusen.challenge.GirisFragment"
         android:label="GirisFragment"
         tools:layout="@layout/fragment_giris">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/kisiselBilgilerFragment"
-        android:name="com.info.odevdeneme1.KisiselBilgilerFragment"
+        android:name="com.rusen.challenge.KisiselBilgilerFragment"
         android:label="KisiselBilgilerFragment"
         tools:layout="@layout/fragment_kisisel_bilgiler">
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/customFragment"
-        android:name="com.info.odevdeneme1.CustomFragment"
+        android:name="com.rusen.challenge.CustomFragment"
         android:label="CustomFragment"
         tools:layout="@layout/fragment_custom">
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/sonuclarFragment"
-        android:name="com.info.odevdeneme1.SonuclarFragment"
+        android:name="com.rusen.challenge.SonuclarFragment"
         android:label="SonuclarFragment"
         tools:layout="@layout/fragment_sonuclar">
         <argument

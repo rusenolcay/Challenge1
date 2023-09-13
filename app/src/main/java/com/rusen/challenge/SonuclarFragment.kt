@@ -1,4 +1,4 @@
-package com.info.odevdeneme1
+package com.rusen.challenge
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.activity.addCallback
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
-import com.info.odevdeneme1.databinding.FragmentSonuclarBinding
+import com.rusen.challenge.databinding.FragmentSonuclarBinding
 
 class SonuclarFragment : Fragment() {
 
